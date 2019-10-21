@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+<body>
+    
+  <div class="bg1">
+    <div class="block1">
+      <span class="block1_text">Lorem ipsum dolor sit amet donec voluptatem ipsum dolor sit amet donec voluptatem</span>
+      <img src="./img/close_icon.svg" alt="" class="close1">
+    </div>
+    <div class="content">
+      <div class="content_text1">Professional Сustom <br>
+                                 Service Just <span class="color_yellow">for You</span></div><br>
+      <div class="content_text2">We can do <span class="color_yellow">anything</span></div>
+    </div>
+    <div class="price_form">
+      <div class="price_form_head">Calculate the Price</div>
+      <div class="over_list1">Choose level</div>
+      <select class="list1">
+        <option>Hardcore</option>
+        <option>Hard</option>
+        <option>Easy</option>
+      </select>
+      <div class="under_list1">How many</div>
+      <button class="minus">-</button>
+      <div id="number">1</div>
+      <button class="plus">+</button>
+      <div class="btn_price">10.99</div>
+      <button class="btn_pop_up">Pop Up</button>
+    </div>
+  </div>
+  <div class="overlay">
+    <div class="popup">
+      <form id="val">
+            <img src="./img/close_icon.svg" alt="" class="close_popup">
+            <div class="popup_header1">Ask us how we can help you</div>
+            <div class="popup_header2">Lorem ipsum dolor sit amet</div>
+            <div class="name">Enter your  name</div>
+            <input type="text" id="name" value="John" onfocus="if (this.value == 'John') {this.value = '';}" onblur="if (this.value == '') {this.value = 'John';}">
+
+            <div class="email">Enter your  email</div>
+            <input type="text" id="email" value="email@mail.com" onfocus="if (this.value == 'email@mail.com') {this.value = '';}" onblur="if (this.value == '') {this.value = 'email@mail.com';}">
+
+            <div class="phone">Your phone</div>
+            <select class="list2">
+              <option selected="selected" value="+ 38" class="usa">UA</option>
+              <option selected="selected" value="+ 1" class="usa">USA</option>
+              <option selected="selected" value="+ 61" class="usa">AU</option>
+              <input type="text" id="phone" value="+ 38 ">
+            </select>
+      </form>
+            <div class="center">
+              <button onclick="store()" type="submit" class="popup_btn">Continue <img src="./img/angle_right.svg" alt="" class="right"></button>
+            </div>
+            
+    </div>
+  </div>
+  <div class="overlay2">
+    <div class="popup2">
+        <img src="./img/close_icon.svg" alt="" class="close_popup2">
+        <div class="center2">
+          <img src="./img/envelope.svg" alt="" class="message">
+          <div class="popup2_header1">Thank you!</div>
+          <div class="popup2_header2">Please check your email</div>
+          <div class="center3">
+            <button class="popup2_btn">Ok, tnx</button>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./src/script.js"></script>
+</body>
+</html>
